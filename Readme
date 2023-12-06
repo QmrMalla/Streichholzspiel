@@ -1,0 +1,21 @@
+Spielregeln für ein einfaches Streichhölzerspiel:
+
+Ausgangspunkt: Es gibt eine bestimmte Anzahl von Streichhölzern (N) auf dem Tisch.
+
+Ziel des Spiels: Die Spieler nehmen abwechselnd 1 bis 3 Streichhölzer weg.
+
+Verlierer: Der Spieler, der das letzte Streichholz nehmen muss, verliert das Spiel.
+
+Das Ziel ist es also, dem Gegner das letzte Streichholz zu überlassen, um zu gewinnen. Das Spiel erfordert taktisches Denken, da die Spieler versuchen, den Gegner in eine Situation zu bringen, in der er das letzte Streichholz nehmen muss.
+
+Hier ist ein einfaches Beispiel:
+
+Ausgangspunkt: 21 Streichhölzer auf dem Tisch.
+Spieler 1 nimmt 2 Streichhölzer.
+Spieler 2 nimmt 3 Streichhölzer.
+Spieler 1 nimmt 1 Streichholz.
+Spieler 2 nimmt 2 Streichhölzer.
+Spieler 1 nimmt 3 Streichhölzer.
+Jetzt muss Spieler 2 das letzte Streichholz nehmen und verliert das Spiel.
+Um eine Gewinnstrategie für das Streichhölzerspiel zu implementieren, bei der der Computer immer gewinnt, kann man das Spiel so gestalten, 
+dass der Computer immer sicherstellen kann, dass die Anzahl der Hölzer nach jedem Zug des Spielers ein Vielfaches von 4 bleibt. Der Computer kann dann entsprechend reagieren, um dieses Muster aufrechtzuerhalten und letztendlich den Sieg zu erringen.
