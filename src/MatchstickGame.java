@@ -3,6 +3,7 @@ import java.util.Random;
 
 public class MatchstickGame {
     static Scanner scanner;
+    //the number of matches and move can be changed 
 	private static final int INITIAL_MATCHES = 21;
 	private static final int MAX_MOVE = 3;
 
@@ -18,8 +19,8 @@ public class MatchstickGame {
             scanner = new Scanner(System.in);
 
             while (matches > 0) {
-                matches = Playerplays(matches);
-                matches = Computerplays(matches);
+                matches = playerPlays(matches);
+                matches = computerPlays(matches);
             }
         } finally {
             if (scanner != null) {
@@ -28,21 +29,21 @@ public class MatchstickGame {
         }
     }
 
-    public static int Playerplays(int matches) {
+    public static int playerPlays(int matches) {
         int playerMove = getPlayerMove();
         matches -= playerMove;
-        System.out.println("The remaining matches after playing: " + matches);
+        System.out.println("remaining matches " + matches);
         if (matches <= 0) {
             System.out.println("You lost! Better luck next time.");
         }
         return matches;
     }
 
-    public static int Computerplays(int matches) {
+    public static int computerPlays(int matches) {
         int computerMove = calculateComputerMove(matches);
         System.out.println("Computer takes " + computerMove + " matches.");
         matches -= computerMove;
-        System.out.println("The remaining matches after playing: " + matches);
+        System.out.println("remaining matches " + matches);
         if (matches <= 0) {
             System.out.println("Computer wins! Good game.");
         }
@@ -65,7 +66,7 @@ public class MatchstickGame {
             }
         }
     }
-
+    //this wininng Stratigie for Computer
     public static int calculateComputerMove(int matches) {
         Random random = new Random();
 
