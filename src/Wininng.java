@@ -1,4 +1,4 @@
 
-public class ComputerWininngStratigie {
+public class Wininng {
 
 }
